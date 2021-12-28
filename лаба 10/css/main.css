@@ -1,0 +1,218 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+#focus1
+{
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  transition: all linear 0.2s;
+  z-index: 100;
+}
+
+#focus1:hover
+{
+  transform: translate(0,-5vh);
+}
+
+.up
+{
+  animation-name: up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes up {
+  to
+  {
+    transform: translate(0,-100vh);
+  }
+
+  100%
+  {
+    display: none;
+  }
+}
+
+#lamp
+{
+  width: 100px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#clickLamp
+{
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 15;
+}
+
+#f1
+{
+  height: 0;
+  width: 50px;
+  border-bottom: 50px solid #0096b1;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  z-index: 10;
+  position: absolute;
+}
+
+#f1_1
+{
+  height: 0;
+  width: 50px;
+  border-bottom: 50px solid #0096b1;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+#f2
+{
+  height: 50px;
+  width: 5px;
+  background-color: #b7b6bc;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#f3
+{
+  width: 20px;
+  height: 10px;
+  background: #0096b1;
+  border-radius: 10px/5px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#f4
+{
+  height: 150px;
+  width: 10px;
+  background-color: #b7b6bc;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+#f5
+{
+  width: 20px;
+  height: 20px;
+  background: #0096b1;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -3px;
+  z-index: 1;
+}
+
+#f6
+{
+  width: 70px;
+  height: 25px;
+  background: #b7b6bc;
+  border-top-left-radius: 50px 40px;
+  border-top-right-radius: 50px 40px;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+}
+
+#light
+{
+  width: 0;
+  height: 0;
+  border-left: 30vw solid transparent;
+  border-right: 30vw solid transparent;
+  border-bottom: 90vh solid yellow;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: calc(-30vw + 50px);
+  z-index: 5;
+  transition: all linear 0.2s;
+}
+
+#magician
+{
+  width: 28vw;
+  height: 21vh;
+  position:absolute;
+  bottom:-45vh;
+  left: -20vw;
+  transition: all linear 0.2s;
+  opacity: 0;
+}
+
+#magician img
+{
+  width: 21vw;
+  height: 26vh;
+}
+
+#hat
+{
+  width: 28vw;
+  height: 21vh;
+  position:absolute;
+  bottom:-55vh;
+  right: -30vw;
+  opacity: 0;
+}
+
+#hat img
+{
+  width: 10vw;
+  height: 10vh;
+}
+
+#bird
+{
+  width: 5vw;
+  height: 5vh;
+  position:absolute;
+  bottom:-40vh;
+  right: -10vw;
+  transition: all linear 0.5s;
+  opacity: 0;
+  z-index: 15;
+}
+
+#bird img
+{
+  width: 5vw;
+  height: 5vh;
+}
+
+#rabbit
+{
+  width: 5vw;
+  height: 5vh;
+  position:absolute;
+  bottom:-30vh;
+  right: -10vw;
+  transition: all linear 0.2s;
+  opacity: 0;
+  z-index: 15;
+}
+
+#rabbit img
+{
+  width: 5vw;
+  height: 5vh;
+}
